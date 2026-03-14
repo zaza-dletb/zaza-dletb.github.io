@@ -1,0 +1,34 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background: #222;
+  padding: 15px;
+}
+
+nav a {
+  margin: 10px;
+  color: cyan;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+}
