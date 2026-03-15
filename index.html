@@ -66,7 +66,6 @@
        <li><a href="#Investigation">Investigation</a></li>
        <li><a href="#Plan and Design">Plan and Design</a></li>
        <li><a href="#Create">Create</a></li>
-       <li><a href="#Testing">Testing</a></li>
        <li><a href="#Evaluate">Evaluate</a></li>
        <li><a href="#References">References</a></li>
        <li><a href="#Word Count">Word Count</a></li>
@@ -275,14 +274,17 @@
    
 </section>
 
-<section id="testing">
-<h2>Testing</h2>
-<p>Testing results and feedback.</p>
-</section>
-
-<section id="evaluate">
+<section id="Evaluate">
 <h2>Evaluate</h2>
-<p>Evaluation of the project.</p>
+<p><b>BR1:</b>The requirement is met exactly as I planned in the Plan & Design section. On pressing A on the Microbit you get the digital input, which shows temp and moisture on microbit. The analogue input- soil moisture value is effortlessly collected too. The output is created by the risk threshold and the risk level is shown on the microbit, csv and python. The system is turned on at start and works until the button A+B pressed. Restarts by shaking the microbit.</p>
+<p><b>BR2:</b>The temperature, soil moisture and is sent to python and stored in microbit. Had no problems here.</p>
+<p><b>BR3:</b>The data sent from microbit is stored in a csv file and then the python runs a simulation based on the drought risk. It also displays different risk levels based on the inputs. I had a little problem with the data not being clean but then I downloaded the code as a file on the microbit.</p>
+<p><b>AR1:</b>Just as in the Plan section, without any problems, based on all the collected data in the csv file so far, my python model determines a disaster risk possibility based on a calculation.</p>
+<p><b>AR2:</b>I coded 2 What if questions with at least one changed key variable. It perfectly simulates a change in predicted risk. Had no problems here. </p>
+<img src="Images/screenshot25.png" width="300"> 
+<p><b>AR3:</b> Like I mentioned in the Plan section, I implemented an alarm into the microbit so whenever the moisture is <300, the buzzer goes off.</p>
+
+
 </section>
 
 <section id="references">
