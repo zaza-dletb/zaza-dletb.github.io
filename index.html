@@ -250,8 +250,29 @@
 <h3>TESTING</h3>
 <h4>Unit Testing</h4>
 <p>Throughout the design and create phase, I kept testing my model at every step. Whenever I added a new piece/block of code to the microbit, I tested it to check if it was functioning properly. Towards the end of the project, I ran the code about 7-8 times alongside the python bit to see if it did its inteded function. This took me about 40 mins in class to perform but those 40 mins were very essential.</p>
-  
-<p></p>
+<img src="Images/screenshot20.png" width="300"> 
+<p>As for the python coding, I had to keep testing it after every line of code because it is more sensitive to errors and harder to code than microbit blocks. I would run the code subsequently after every new line and whenever there was an error, I would try to fix it and look for any obvious errors like spelling mistakes. If I couldn't fix it, I would research about it on online forums like Quora and Github. After fixing, the code, I would test it thrice before approving it.</p>
+
+<h3>Test Tables</h3>
+<img src="Images/screenshot21.png" width="300"> 
+<img src="Images/screenshot22.png" width="300"> 
+
+<h3>Important Code</h3>
+<img src="Images/screenshot23.png" width="300"> 
+<p>This code is particularly very important it assigns communication with microbit and lays the framework for the project to be developed upon. As explain in the image step by step, this is where the live data from microbit is taken formatted correctly to then being put into the csv file, essentially making it the centre of the whole model. </p>
+
+<h3>Problems</h3>
+<p>The only real problem I ran into was that my microbit would send the data in an inaccurate format, resulting in it being shown in the python file as jumbled of characters with missing spaces and letters, I looked up some videos on  Youtube and researched on Quora as well. Eventually, I found out that the solution was quite simple and it took me about 5 mins to fix it. The fix can be seen below:</p>
+<img src="Images/screenshot24.png" width="300"> 
+
+<h3>Description of the Model</h3>
+<p>The system can be turned on and off manually. It takes real time values like temp. And soil moisture and sends them to python to run calculations on drought risks and its levels and its all saved in a csv file.</p>
+<p><br>Upon receiving values, python converts the bytes into text and removes errors  and splits them into 4 different variables- Temperature (Celsius), Soil moisture(0-1023), Risk status and the Drought risk. It converts the temperature and soil moisture readings into numbers and the risk status remains as a string while drought risk is a calculation scaled down by a thousand to 1d.p.</br></p>
+<p><br>These values are added to the csv file as separate rows where they are stored + put into pandas dataframe as well. Then it changes the temperature and moisture values into numbers for the csv file, preventing math errors. Then you get an average risk value based on mean of these.</br></p>
+<p><br>Moving onto AR2 it sets out a drought risk scale and generates the what if questions where the user can enter the values accordingly and gets the drought risk result.</br></p>
+<p><br>The system can be turned off by pressing Button A+B and started up again by shaking the microbit. Temp. And moisture values can also be retrieved by pressing button A, while risk status be Button B.</br></p>
+<p><br>Finally, AR3: when the moisture reading is >850, a buzzer is triggered.</br></p>
+   
 </section>
 
 <section id="testing">
