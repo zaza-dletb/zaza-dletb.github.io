@@ -162,24 +162,23 @@
 
 <h3>Flowchart explaining system architecture and actions: </h3>
 <p>To create this flowchart, I used <a href="https://miro.com/app/dashboard/" target="_blank">miro</a> to create my flowchart and it explains all the system architecture and the processes it does.<b>It is on the next slide:</b></p>
-<img src="Images/screenshot14.png" width="150"> 
+<img src="Images/screenshot14.png" width="300"> 
 <h3>BR1:</h3>
-<img src="Images/screenshot16.png" width="150">
+<img src="Images/screenshot16.png" width="300">
 <p>To accomplish BR1, I will use a Microbit. The digital input is that pressing A you will see temperature and moisture values. The analogue input will be the data collected by the moisture sensor. The output is created by the risk threshold which is shown on the microbit LEDs and in python and csv too. It can be  turned on and off manually but works automatically when started.</p>
 
 <h3>BR3 & AR1:</h3>
-<img src="Images/screenshot17.png" width="150">
+<img src="Images/screenshot17.png" width="300">
 <p>To complete AR1 and BR3, both related, I will take the microbit data and redirect it to python using Serial USB. The python will store the data into the csv file. It will then use the data to run a calculation to give a drought risk for each row of data (BR3). It will then use the data in the csv file to calculate an average drought risk based on all the data collected (AR1). </p>
 
 <h3>AR3:</h3>
-<img src="Images/screenshot18.png" width="150">
+<img src="Images/screenshot18.png" width="300">
 <p>For AR3, the adaptive feedback system will be that if the moisture is <300, then an alarm sound will be made with “DANGER” displayed on the microbit. </p> 
 
 <h3>BR2 & AR2:</h3>
-<img src="Images/screenshot19.png" width="150">
+<img src="Images/screenshot19.png" width="300">
 <p>For BR2 and AR2,upon establishing the risk condition, the temperature, soil moisture level and the risk status will be sent to python subsequently via serial USB, the python script takes this data, reads this data, splits them into 3 different variables, shows them onto the screen and then appends them to the csv file(BR2) Then it generates them 2 what if scenario regarding temperature and moisture and giving them the risk status for that and this loop repeats(AR2).</p>
 
-   
 </section>
 
 <section id="create">
